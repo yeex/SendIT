@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
-</head>
+	<title>Login form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-	<div class="form">
-		<ul class="tab-group">
-			<li class="tab"><a href="registration.html">Sign Up</a></li>
-			<li class="tab-active"><a href="login.html">Log In</a></li>
-		</ul>
-		<div id="login">
-			<h1>Welcome back!</h1>
-				<form action="/" method="post">
-					<div class="field-wrap">
-						<label>
-							Email address<span class="req">*</span>
-						</label>
-						<input type="email" required autocomplete="off" />
-					</div>
-					<div class="field-wrap">
-						<label>
-							Password<span class="req">*</span>
-						</label>
-						<input type="password" required autocomplete="off">
-					</div>
-						<p class="forgot"><a href="#">Forgot password?</a></p>
-						<button class="button button-block" />Log In</button>
-				</form>
+	<div class="container">
+		<div class="logo">
+			<img="logo" src="logo.png">
 		</div>
+		<p>Access your parcels and have an endless possibilities with it.</p>
+	 <form action="user.html" method="post">
+		<div class="tb">
+			<input type="text" placeholder="username" value="">
+		</div>
+		<div class="tb">
+			<input type="password" placeholder="password" value="">
+		</div>
+		<input class="btn" type="submit" name="" value="LOG IN">
+	 </form>
+		 <a class="b1"href="#">FORGOT PASSWORD?</a>
+		 <a class="b2"href="registration.html">CREATE ACCOUNT</a>
 	</div>
 </body>
 </html>
