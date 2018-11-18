@@ -1,0 +1,47 @@
+{
+  "name": "sendit",
+  "version": "1.0.0",
+  "description": "NodeJS REST-APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel ./build/tests --recursive",
+    "build": "babel src --watch -d build",
+    "serve": "nodemon build/server.js",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha ./build/tests",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeex/UI"
+  },
+  "author": "Ntwari Moise",
+  "license": "ISC",
+  "homepage": "https://github.com/yeex/UI/blob/Update/README.md",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "chai-http": "^4.2.0",
+    "codeclimate-test-reporter": "^0.5.1",
+    "babel-cli": "^6.26.0",
+    "coveralls": "^3.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest-node": "^2.0.0-beta.3",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "chai": "^4.2.0",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.6"
+  }
+}
