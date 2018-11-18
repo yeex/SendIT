@@ -7,25 +7,25 @@ const parcels = [
 		userName: "moise",
 		parcels: [
 		  {
-			parcelId: '1',
+			parcelId: '11',
 			parcelName: 'phones',
-			status: 'in transit',
+			status: 'delivered',
 			location: 'rwanda',
 			destination: 'kenya',
 			weight: 10,
 			price: 200
 		  },
 		  {
-			parcelId: '3',
+			parcelId: '13',
 			parcelName: 'phones',
-			status: 'in transit',
+			status: 'cancelled',
 			location: 'rwanda',
 			destination: 'kenya',
 			weight: 10,
 			price: 200
 		  },
 		  {
-			parcelId: '2',
+			parcelId: '12',
 			parcelName: 'phones',
 			status: 'in transit',
 			location: 'rwanda',
@@ -34,13 +34,13 @@ const parcels = [
 			price: 200
 		  }
 		]
-	  },
-	  {
+	},
+	{
 		userId: "2",
 		userName: "moise",
 		parcels: [
 		  {
-			parcelId: '1',
+			parcelId: '21',
 			parcelName: 'phones',
 			status: 'in transit',
 			location: 'rwanda',
@@ -49,7 +49,7 @@ const parcels = [
 			price: 200
 		  },
 		  {
-			parcelId: '5',
+			parcelId: '25',
 			parcelName: 'phones',
 			status: 'in transit',
 			location: 'rwanda',
@@ -58,23 +58,22 @@ const parcels = [
 			price: 200
 		  },
 		  {
-			parcelId: '6',
+			parcelId: '26',
 			parcelName: 'phones',
-			status: 'in transit',
+			status: 'cancelled',
 			location: 'rwanda',
 			destination: 'kenya',
 			weight: 10,
 			price: 200
 		  }
 		]
-	  },
-	
-	  {
-		userId: "1",
+	},
+	{
+		userId: "3",
 		userName: "moise",
 		parcels: [
 		  {
-			parcelId: '1',
+			parcelId: '31',
 			parcelName: 'phones',
 			status: 'in transit',
 			location: 'rwanda',
@@ -83,7 +82,7 @@ const parcels = [
 			price: 200
 		  },
 		  {
-			parcelId: '3',
+			parcelId: '33',
 			parcelName: 'phones',
 			status: 'in transit',
 			location: 'rwanda',
@@ -92,7 +91,7 @@ const parcels = [
 			price: 200
 		  },
 		  {
-			parcelId: '2',
+			parcelId: '32',
 			parcelName: 'phones',
 			status: 'in transit',
 			location: 'rwanda',
@@ -101,7 +100,7 @@ const parcels = [
 			price: 200
 		  }
 		]
-	  }
+	}
 ];
 app.get('/', (req, res) => {
 	res.send('SendIT');
