@@ -106,9 +106,6 @@ app.get('/', (req, res) => {
 	res.send('SendIT');
 });
 
-const result = parcels.find( plc => plc.userId === '2' );
-console.log(result);
-
 app.get('/api/v1/users/parcels', (req, res) => {
 	res.send(parcels);
 });
@@ -118,7 +115,17 @@ app.post('/api/v1/users/parcels', (req, res) => {
 	const parcel = {
 		id: parcels.length + 1,
 		name: req.body.name,
-		parcel: [],
+		parcel: [
+			{
+				parcelId: '',
+		        parcelName: '',
+		        status: '',
+		        location: '',
+		        destination: '',
+		        weight: '',
+		        price: ''
+			}
+		],
 	};
 	parcels.push(parcel);
 	res.send(parcel);
@@ -131,6 +138,10 @@ app.put('/api/v1/users/parcels/:id', (req, res) => {
 	parcel.name = req.body.name;
 	res.send(parcel);
 });
+app.get('/api/v1/users/:userid/parcels', (req, res) => {
+const result = parcels.find( plc => plc.userId === 2 );
+res.send (result);
+})
 app.put('/api/v1/users/parcels/:id/cancel', (req, res) => {
 	const parcel = parcels.find(c => c.id === parseInt(req.params.id));
 	if(!parcel) return res.status(404).send('The parcel with the given ID was not found.');
@@ -152,5 +163,4 @@ app.get('/api/v1/users/parcels/:id', (req, res) => {
 	if(!parcel) return res.status(404).send('The parcel with the given ID was not found.');
 	res.send(parcel);
 });
-const port = process.env.PORT || 3000;
-app.listen(port , () => console.log('Listening on port ${PORT}...'));
+app.listen(3000 , () => console.log('Listening on port 5000...'));
