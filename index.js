@@ -105,6 +105,10 @@ const parcels = [
 app.get('/', (req, res) => {
 	res.send('SendIT');
 });
+
+const result = parcels.find( plc => plc.userId === '2' );
+console.log(result);
+
 app.get('/api/v1/users/parcels', (req, res) => {
 	res.send(parcels);
 });
