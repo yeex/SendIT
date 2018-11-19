@@ -7,13 +7,13 @@ body {
 .container {
   width: 360px;
   height: 600px;
-  background: url(picture.png);
+  background: url(../img/picture.png);
   border-radius: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%,-50%);
-  color: #dfdfdf;
+  color: none;
   text-align: center;
 
 } 
@@ -40,7 +40,7 @@ body {
   font-size: 14px;
   color: #0e6816;
 } 
-.btn {
+.btn1, .btn2, .btn3 {
   width: 140px;
   height: 40px;
   background: #134b18;
@@ -148,9 +148,8 @@ div.app:before{
   margin-top: 50%;
 }
 .add {
-    margin-top: 70%;
+    margin-top: 300px;
     background-color: #e0f6fc;
-    border: none;
     color: #267e1a;
     border: 2px;
     border-style: solid;
@@ -158,7 +157,6 @@ div.app:before{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
 }
 .add:hover {
     background-color: #298f20;
@@ -249,7 +247,7 @@ div.app:before{
 }
 .req {
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #ffffff;
     border: none;
     color: rgb(12, 12, 12) ;
@@ -370,10 +368,6 @@ z-index: 0;
     font-weight: 100;
 }
 
-.bodycontent2 h4 {
-    font-size: 16px;
-    font-weight: 100;
-}
 .bodycontent h3 {
     font-size: 16px;
     font-weight: 100;
@@ -382,22 +376,6 @@ z-index: 0;
 .bodycontent h3 {
     font-size: 16px;
     font-weight: 100;
-}
-.bodycontent2 h4 {
-    color: #080808;
-    font-size: 16px;
-    font-weight: 100;
-}
-.bodycontent2 #in2 {
-    
-    padding-top: 9px;
-    padding-top: 9px;
-    border: 1px;
-    border-color: #080808;
-    border-style: solid;
-    width: 298px;
-    color: #0d0d0e;
-    background-color: #00ffff00;
 }
 .bodycontent2{
   margin-top: 10px;
@@ -417,7 +395,7 @@ z-index: 0;
     border-style: solid;
     width: 300px;
 }
-.bodycontent2 p{
+p{
   color:#070707;
 
 }
@@ -451,16 +429,4 @@ z-index: 0;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-.bodycontent2 #in2 {
-    font-size: 20px;
-    border: 1px;
-    border-color: #070707;
-    border-style: solid;
-    width: 298px;
-    color: #0a0a0a;
-    background-color: #00ffff00;
-}
-.bodycontent2 h2{
-  color:#0d0d0e;
 }
