@@ -3,7 +3,7 @@ var app = express();
 app.use(express.json());
 const parcels = [
 	{
-		userId: "1",
+		id: "1",
 		userName: "moise",
 		parcels: [
 		  {
@@ -36,7 +36,7 @@ const parcels = [
 		]
 	},
 	{
-		userId: "2",
+		id: "2",
 		userName: "moise",
 		parcels: [
 		  {
@@ -69,7 +69,7 @@ const parcels = [
 		]
 	},
 	{
-		userId: "3",
+		id: "3",
 		userName: "moise",
 		parcels: [
 		  {
@@ -138,10 +138,10 @@ app.put('/api/v1/users/parcels/:id', (req, res) => {
 	parcel.name = req.body.name;
 	res.send(parcel);
 });
-app.get('/api/v1/users/:userid/parcels', (req, res) => {
-const result = parcels.find( plc => plc.userId === 2 );
+app.get('/api/v1/users/:id/parcels', (req, res) => {
+const result = parcels.find(c => c.id === parseInt(req.params.id));
 res.send (result);
-})
+});
 app.put('/api/v1/users/parcels/:id/cancel', (req, res) => {
 	const parcel = parcels.find(c => c.id === parseInt(req.params.id));
 	if(!parcel) return res.status(404).send('The parcel with the given ID was not found.');
@@ -152,15 +152,9 @@ app.put('/api/v1/users/parcels/:id/cancel', (req, res) => {
 	parcels.splice(index, 1);
 	res.send(parcel);
 });
-function validateParcel(parcel) {
-	const schema = {
-		name: Joi.string().min(3).required()
-	};
-	return Joi.validate(parcel, schema);
-}
 app.get('/api/v1/users/parcels/:id', (req, res) => {
 	const parcel = parcels.find(c => c.id === parseInt(req.params.id));
 	if(!parcel) return res.status(404).send('The parcel with the given ID was not found.');
 	res.send(parcel);
 });
-app.listen(3000 , () => console.log('Listening on port 5000...'));
+app.listen(3000 , () => console.log('Listening on port 3000...'));
