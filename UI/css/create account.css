@@ -1,5 +1,5 @@
 body{
-  background: #606060;
+  background: #695d5d;
   margin: 0;
   padding: 0;
   font-family: "Montserrat" ,sans-serif;
@@ -12,7 +12,7 @@ body{
   top: 50%;
   left: 50%;
   transform:translate(-50%,-50%);
-  color: white;
+  color: #0e6816;
   text-align: center;
 
 } 
@@ -24,7 +24,7 @@ body{
 .tb{
   width: 260px;
   height: 40px;
-  background: white;
+  background: #0e6816;
   border-radius: 10px;
   margin: 10px auto;
 }
@@ -38,17 +38,17 @@ body{
   font-family: "Montserrat" ,sans-serif;
   line-height: 37px;
   font-size: 14px;
-  color: #29abe2;
+  color: #0e6816;
 } 
 .btn{
   width: 260px;
   height: 40px;
-  background: #1f7acc;
+  background: #0e6816;
   border-radius: 10px;
   margin: 10px auto;
   outline: none;
   border: none;
-  color: white;
+  color: #0e6816;
   transition: 0.4s all;
 
 }
@@ -61,11 +61,11 @@ body{
   text-align: center;
   margin: auto;
   transition: 0.4s all;
-  color: white;
+  color: #0e6816;
 
 }
 a:hover{
-  color:#b8c6d4;
+  color: #0e6816;
 }
 .b2{
  
@@ -91,7 +91,7 @@ a:hover{
 
 }
 .btn:hover {
-    background-color: #0f3b63; /* Green */
+    background-color: #0e6816; /* Green */
     color: white;
 }
 .container h2 {
@@ -109,5 +109,5 @@ a:hover{
   font-family: "Montserrat" ,sans-serif;
   line-height: 37px;
   font-size: 14px;
-  color: #29abe2;
+  color: #0e6816;
 }

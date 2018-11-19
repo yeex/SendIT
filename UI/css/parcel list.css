@@ -1,5 +1,5 @@
 body{
-  background: #606060;
+  background: #685959;
   margin: 0;
   padding: 0;
   font-family: "Montserrat" ,sans-serif;
@@ -7,13 +7,13 @@ body{
 .container {
   width: 360px;
   height: 600px;
-  background:#e0f6fc;
+  background:#798386;
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%,-50%);
   color: white;
-  /*text-align: center;*/
+  text-align: center;
 
 } 
 .app{
@@ -62,14 +62,14 @@ div.app div.head
   margin-left: 70px;
 }
 .bodycontent{
-  color: #29abe2;
+  color: #070707;
   margin-top: 50%;
 }
 .btn {
     margin-top: 70%;
-    background-color: #e0f6fc;
+    background-color: #080808;
     border: none;
-    color: #29abe2;
+    color: #0a0a0a;
     border: 2px;
     border-style: solid;
     padding: 15px 32px;
@@ -79,8 +79,8 @@ div.app div.head
     font-size: 16px;
 }
 .btn:hover {
-    background-color: #29abe2; /* Green */
-    color: white;
+    background-color: #070707; /* Green */
+    color: rgb(10, 10, 10);
 }
 #h1{
   font-size: 10px;
@@ -88,7 +88,7 @@ div.app div.head
 }
 .bodycontent {
     margin-left: 20px;
-    color: #29abe2;
+    color: #030303;
     margin-top: 23%;
     float: left;
   }
@@ -106,13 +106,13 @@ div.app div.head
 .bodycontent #in {
     background-color: #ff000000;
     border: 1px;
-    border-color: #29abe2;
+    border-color: #0a0a0a;
     border-style: solid;
 }
 .bodycontent #in {
     background-color: #ff000000;
     border: 1px;
-    border-color: #29abe2;
+    border-color: #080808;
     border-style: solid;
     /* max-width: 100%; */
     width: 298px;
@@ -134,14 +134,13 @@ div.app div.head
     font-weight: 100;
     text-align: center;
 }
-parcel creation.css:98
 .bodycontent h3 {
     /* margin-left: -70px; */
     font-size: 16px;
     font-weight: 100;
 }
 .bodycontent2 h4 {
-    color: #29abe2;
+    color: #080808;
     font-size: 16px;
     font-weight: 100;
 }
@@ -151,11 +150,11 @@ parcel creation.css:98
     padding-top: 9px;
     op: 9px;
     border: 1px;
-    border-color: #29abe2;
+    border-color: #080808;
     border-style: solid;
     /* max-width: 100%; */
     width: 298px;
-    color: #29abe2;
+    color: #0d0d0e;
     background-color: #00ffff00;
 }
 .bodycontent2{
@@ -163,39 +162,38 @@ parcel creation.css:98
 }
 .bodycontent {
     margin-left: 20px;
-    color: #29abe2;
+    color: #070707;
     margin-top: 3%;
     float: left;
 }
 .bodycontent #in {
-    color: #29abe2;
+    color: #070707;
     padding-top: 9px;
     background-color: #ff000000;
     border: 1px;
-    border-color: #29abe2;
+    border-color: #050505;
     border-style: solid;
-    /* max-width: 100%; */
     width: 298px;
 }
 .bodycontent2 p{
-  color:#29abe2;
+  color:#070707;
 
 }
 #frm{
-  color:#29abe2;
+  color:#0a0a0a;
   margin-top: 50%;
 }
 .option{
-  color :blue;
+  color :rgb(8, 8, 8);
 }
 .slt {
     width: 152px;
-    color: blue;
-    color: #29abe2;
+    color: rgb(2, 2, 10);
+    color: #050505;
     /* padding-top: 9px; */
     background-color: #ff000000;
     border: 1px;
-    border-color: #29abe2;
+    border-color: #050505;
     border-style: solid;
 }
 .req {
@@ -204,7 +202,7 @@ parcel creation.css:98
     margin-top: 45%;
     background-color: #e0f6fc;
     border: none;
-    color: #29abe2;
+    color: #0a0a0a;
     border: 2px;
     border-style: solid;
     padding: 8px;
@@ -212,11 +210,6 @@ parcel creation.css:98
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    /* margin-bottom: -49px; */
-}
-/*.req:hover {*/
-    background-color: #29abe2; /* Green */
-    color: white;
 }
 .bodycontent2 #in2 {
     font-size: 20px;
@@ -224,15 +217,15 @@ parcel creation.css:98
     /* padding-top: 9px; */
     op: 9px;
     border: 1px;
-    border-color: #29abe2;
+    border-color: #070707;
     border-style: solid;
     /* max-width: 100%; */
     width: 298px;
-    color: #29abe2;
+    color: #0a0a0a;
     background-color: #00ffff00;
 }
 .bodycontent2 h2{
-  color:#29abe2;
+  color:#0d0d0e;
 }
 .fas {
   margin-left: 40px;
@@ -247,7 +240,7 @@ parcel creation.css:98
 }
 .fa, .fas:hover {
       
-    color: #29abe2;
+    color: #0d0d0e;
 }
 .modal{
   
@@ -285,7 +278,7 @@ parcel creation.css:98
 
 }
 .closebtn:hover{
-  color: #29abe2;
+  color: #050505;
   cursor: pointer;
  
   

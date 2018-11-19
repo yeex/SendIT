@@ -67,14 +67,14 @@ div.app div.head
   margin-left: 70px;
 }
 .bodycontent{
-  color: #29abe2;
+  color: #267e39;
   margin-top: 50%;
 }
 .btn {
     margin-top: 70%;
     background-color: #e0f6fc;
     border: none;
-    color: #29abe2;
+    color: #267e1a;
     border: 2px;
     border-style: solid;
     padding: 15px 32px;
@@ -84,6 +84,6 @@ div.app div.head
     font-size: 16px;
 }
 .btn:hover {
-    background-color: #29abe2; /* Green */
+    background-color: #298f20;
     color: white;
 }
