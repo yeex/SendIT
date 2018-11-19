@@ -132,12 +132,9 @@ app.post('/api/v1/users/parcels', (req, res) => {
 	res.send(parcel);
 });
 
-// Fetch a specific parcel delivery order
+// Fetch a specific parcel delivery order(Not working yet)
 app.get('/api/v1/users/parcels/:parcelId', (req, res) => {
-	const parcel = parcels.find(c => c.parcels(c => c.parceId === parseInt(req.params.parcelId)));
 	if(!parcel) return res.status(404).send('The parcel with the given ID was not found.');
-	parcel.name = req.body.name;
-	res.send(parcel);
 });
 
 // Fetch all parcel delivery order by a specific user
@@ -145,7 +142,7 @@ app.get('/api/v1/users/:id/parcels', (req, res) => {
 const result = parcels.find(c => c.id === parseInt(req.params.id));
 res.send (result);
 });
-// Cancel a specific parcel delivery order
+// Cancel a specific parcel delivery order(Not working yet)
 app.put('/api/v1/users/parcels/:id/cancel', (req, res) => {
 	const parcel = parcels.find(c => c.id === parseInt(req.params.id));
 	if(!parcel) return res.status(404).send('The parcel with the given ID was not found.');
