@@ -1,16 +1,16 @@
 ###### SendIT | UI
 #### SendIT is a courier service that helps users deliver parcels to different destinations.  
 
-      Stack
+      ### Stack
 	- [HTML] & [CSS]
 	- [Javascript]
 
 
-      Frameworks
+      ### Frameworks
 	- [NodeJS]
 	- [ExpressJS]
 
-      Required Features:
+      ### Working features:
 	- Users can create an account and log in.
 	- Users can create a parcel delivery order.
 	- Users can change the destination of a parcel delivery order.
