@@ -5,13 +5,13 @@ body {
   font-family: "Montserrat" ,sans-serif;
 }
 .container {
-  width: 360px;
+  width: 1160px;
   height: 600px;
   background: url(../img/picture.png);
   border-radius: 10px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform:translate(-50%,-50%);
   color: none;
   text-align: center;
