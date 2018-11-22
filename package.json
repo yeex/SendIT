@@ -1,22 +1,23 @@
 {
-  "name": "sendit",
+  "name": "SendIT",
   "version": "1.0.0",
   "description": "NodeJS REST-APIs",
   "main": "index.js",
   "scripts": {
+    "dev-test" : "mocha server/dist/dev-tests/ || true",
     "start": "babel ./build/tests --recursive",
-    "build": "babel src --watch -d build",
+    "build": "babel server/src --watch -d server/dist",
     "serve": "nodemon build/server.js",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha ./build/tests",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yeex/UI"
+    "url": "https://github.com/yeex/SendIT"
   },
   "author": "Ntwari Moise",
   "license": "ISC",
-  "homepage": "https://github.com/yeex/UI/blob/Update/README.md",
+  "homepage": "https://github.com/yeex/SendIT/blob/Update/README.md",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

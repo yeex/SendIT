@@ -1,7 +1,9 @@
+'use strict';
+
 const add = (...inputs) => {
   console.log('inputs', inputs);
 
-  const numbers = inputs.filter((input) => {
+  const numbers = inputs.filter(input => {
     const isNumber = typeof input === 'number';
     if (!isNumber) {
       console.log('${input} is not a number');
@@ -17,5 +19,5 @@ const add = (...inputs) => {
 };
 
 module.exports = {
-  add,
+  add
 };
