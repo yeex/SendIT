@@ -6,8 +6,7 @@ body {
 }
 .container {
   width: 360px;
-  height: 600px;
-  background: url(picture.png);
+  height: 400px;
   border-radius: 10px;
   position: absolute;
   top: 50%;
@@ -15,12 +14,15 @@ body {
   transform:translate(-50%,-50%);
   color: white;
   text-align: center;
-
 } 
 .container h1 {
   font-size: 40px;
   margin-top: 125px;
-  margin-bottom: 60px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.align {
+  margin-left: 50px;
 }
 .tb {
   width: 260px;
@@ -77,15 +79,12 @@ a:hover {
     text-align: center;
 }
 .logo {
-    margin-top: 139px;
+    margin-top: 139px 0 600px 2px;
     max-width: 10%;
     width: 40px;
     height: 25px;
     zoom: 0.3;
     left: 50%;
-    margin-bottom: 600px;
-    margin-left: 300px;
-
 }
 .btn:hover {
     background-color: #0f3b63; /* Green */
@@ -93,4 +92,7 @@ a:hover {
 }
 section {
   margin: 50px 15px 10px 15px;
+}
+.dum {
+  margin-top: 250px;
 }

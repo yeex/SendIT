@@ -4,7 +4,7 @@
   "description": "NodeJS REST-APIs",
   "main": "index.js",
   "scripts": {
-    "dev-test" : "mocha server/dist/dev-tests/ || true",
+    "dev-test": "mocha server/dist/dev-tests/ || true",
     "start": "babel ./build/tests --recursive",
     "build": "babel server/src --watch -d server/dist",
     "serve": "nodemon build/server.js",

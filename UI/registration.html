@@ -1,30 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>SendIT | Sign Up </title>
-	<meta charset>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Login form</title>
+	<link rel="stylesheet" type="text/css" href="css/try.css">
+</head>
 <body>
-	<div class="container">
-		<div class="logo">
-			<img alt="logo" src="img/logo.png" >
+	<div class="form">
+		<ul class="tab-group">
+			<li class="tab-active"><a href="registration.html">Sign Up</a></li>
+			<li class="tab"><a href="login.html">Log In</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="signup">
+				<h1>Sign Up for free</h1>
+					<form action="" method="post">
+						<div class="top-row">
+							<div class="field-wrap">
+								<label>
+									First name<span class="req">*</span>
+								</label>
+								<input type="text" required autocomplete="off" />
+							</div>
+							<div class="field-wrap">
+								<label>
+									Last name<span class="req">*</span>
+								</label>
+								<input type="text" required auttocomplete="off" />
+							</div>
+						</div>
+						<div class="field-wrap">
+							<label>
+								Email Address<span class="req">*</span>
+							</label>
+							<input type="email" required autocomplete="off" />
+						</div>
+						<div class="field-wrap">
+							<label>
+								Set a password<span class="req">*</span>
+							</label>
+							<input type="password" required autocomplete="off" />
+						</div>
+						<button type="submit" class="button button-block" />Get started</button>
+					</form>
+			</div>
+			<div id="login">
+				<h1>Welcome back!</h1>
+					<form action="/" method="post">
+						<div class="field-wrap">
+							<label>
+								Email address<span class="req">*</span>
+							</label>
+							<input type="email" required autocomplete="off" />
+						</div>
+						<div class="field-wrap">
+							<label>
+								Password<span class="req">*</span>
+							</label>
+							<input type="password" required autocomplete="off">
+						</div>
+						<p class="forgot"><a href="#">Forgot password?</a></p>
+						<button class="button button-block" />Log In</button>
+					</form>
+			</div>
 		</div>
-	 	<p>Have a chance to order your parcel delivery right away.</p>
-	 <form action="user.html" method="post">
-	 	<div class="tb">
-	 		<input type="text" placeholder="Names" value="">
-	 	</div>
-		<div class="tb">
-			<input type="email" placeholder="email" value="">
-		</div>
-		<div class="tb">
-			<input type="password" placeholder="password" value="">
-		</div>
-		<div class="tb">
-			<input type="phone" placeholder="Phone Number" value="">
-		</div>
-		<input class="btn" type="submit" name="" value="SIGN UP">
-	  </form>
 	</div>
 </body>
 </html>

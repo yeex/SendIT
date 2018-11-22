@@ -27,8 +27,6 @@ const server = (0, _express2.default)();
 server.use(_express2.default.json());
 server.use(_express2.default.urlencoded({ extended: false }));
 
-server.use('/api/v1/parcels', _parcels2.default);
-
 server.get('/api/v1/users', (req, res) => {
   res.status(200).send(_user2.default);
 });
@@ -72,6 +70,6 @@ server.get('/api/v1/parcels', (req, res) => {
 
 const PORT = 5000;
 server.listen(PORT, () => {
-  console.log(`API server started on ${PORT}`);
+  console.log(`Server started on ${PORT}`);
 });
 exports.default = server;

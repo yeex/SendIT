@@ -8,8 +8,6 @@ const server = express();
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 
-server.use('/api/v1/parcels', parcelsRouter);
-
 server.get('/api/v1/users', (req, res) => {
   res.status(200).send(users);
 });
@@ -54,6 +52,6 @@ server.get('/api/v1/parcels', (req, res) => {
 
 const PORT = 5000;
 server.listen(PORT, () => {
-  console.log(`API server started on ${PORT}`);
+  console.log(`Server started on ${PORT}`);
 });
 export default server;
