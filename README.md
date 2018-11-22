@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=Develop)](https://travis-ci.org/yeex/SendIT) [![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg?branch=Develop)](https://coveralls.io/github/yeex/SendIT?branch=Develop)
+[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=Develop)](https://travis-ci.org/yeex/SendIT) [![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg)](https://coveralls.io/github/yeex/SendIT)
 ###  📮SendIT | UI
 ### SendIT is a courier service that helps users deliver parcels to different destinations.  
 
@@ -23,10 +23,10 @@ After fetching the repository directory using CMD(Command Prompt), access the ex
 
       
 ### Endpoints
-| EndPoint                        | Functionality                                         |
-|:--------------------------------|:------------------------------------------------------|
-| GET /parcels                    |    Fetch all parcel delivery orders                   |
-| GET /parcels/<parcelId>         |    Fetch a specific parcel delivery order             | 
-| GET /users/<userId>/parcels     |    Fetch all parcel delivery orders by a specific user| 
-| PUT /parcels/<parcelId>/cancel  |    Cancel the specific parcel delivery order          | 
-| POST /parcels                   |    Create a parcel delivery order                     | 
+| EndPoint                      | Functionality                                         |
+|:------------------------------|:------------------------------------------------------|
+| GET /parcels                  |    Fetch all parcel delivery orders                   |
+| GET /parcels/parcelId         |    Fetch a specific parcel delivery order             | 
+| GET /users/userId/parcels     |    Fetch all parcel delivery orders by a specific user| 
+| PUT /parcels/parcelId/cancel  |    Cancel the specific parcel delivery order          | 
+| POST /parcels                 |    Create a parcel delivery order                     | 
