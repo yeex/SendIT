@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev-test": "mocha server/dist/dev-tests/ || true",
-    "start": "babel ./build/tests --recursive",
+    "start": "node --require babel-core/register --require babel-polyfill ./server/dist/index.js babel ./build/tests --recursive",
     "build": "babel server/src --watch -d server/dist",
-    "serve": "nodemon build/server.js",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha ./build/tests",
+    "server": "nodemon --exec babel-node server/dist/index.js",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha ./server/dist/dev-tests/",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
@@ -19,6 +19,10 @@
   "license": "ISC",
   "homepage": "https://github.com/yeex/SendIT/blob/Update/README.md",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "path": "^0.12.7",
     "babel-eslint": "^10.0.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "chai-http": "^4.2.0",
@@ -43,6 +47,7 @@
     "express-session": "^1.15.6",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.6",
+    "uuid": "^3.3.2",
     "pg": "^7.6.1"
   }
 }

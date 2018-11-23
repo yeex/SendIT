@@ -1,34 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="css/try.css">
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="form">
-		<ul class="tab-group">
-			<li class="tab"><a href="registration.html">Sign Up</a></li>
-			<li class="tab-active"><a href="login.html">Log In</a></li>
-		</ul>
-		<div id="login">
-			<h1>Welcome back!</h1>
-				<form action="/" method="post">
-					<div class="field-wrap">
-						<label>
-							Email address<span class="req">*</span>
-						</label>
-						<input type="email" required autocomplete="off" />
-					</div>
-					<div class="field-wrap">
-						<label>
-							Password<span class="req">*</span>
-						</label>
-						<input type="password" required autocomplete="off">
-					</div>
-						<p class="forgot"><a href="#">Forgot password?</a></p>
-						<button class="button button-block" />Log In</button>
-				</form>
-		</div>
-	</div>
+  <div class="login">
+  	<h1>Login</h1>
+      	<input type="text" name="u" placeholder="Username" required="required" />
+        <input type="password" name="p" placeholder="Password" required="required" />
+        <a href="order.html"><button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button></a>
+        <a href="registration.html">Create an account</a>
+  </div>
 </body>
 </html>

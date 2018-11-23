@@ -14,7 +14,8 @@ var _user2 = _interopRequireDefault(_user);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const { expect, assert } = _chai2.default;
+const { expect, assert } = _chai2.default; /* eslint-disable no-unused-expressions */
+
 _chai2.default.use(_chaiHttp2.default);
 
 describe('Our first test', () => {

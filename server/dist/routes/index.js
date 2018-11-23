@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _express = require("express");
+var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
-var _parcels = require("./parcels");
+var _parcels = require('./parcels');
 
 var _parcels2 = _interopRequireDefault(_parcels);
 
