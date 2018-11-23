@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=Develop)](https://travis-ci.org/yeex/SendIT) [![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg)](https://coveralls.io/github/yeex/SendIT)
+[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=APIs)](https://travis-ci.org/yeex/SendIT)
+[![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg)](https://coveralls.io/github/yeex/SendIT)
 [![Maintainability](https://api.codeclimate.com/v1/badges/973fffd123f8ab784461/maintainability)](https://codeclimate.com/github/yeex/SendIT/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/973fffd123f8ab784461/test_coverage)](https://codeclimate.com/github/yeex/SendIT/test_coverage)
 ###  📮SendIT | UI
