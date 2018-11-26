@@ -33,7 +33,7 @@
 * Install [NodeJs](https://nodejs.org/en/download/) .
 * Clone this repository using `git clone https://github.com/yeex/SendIT.git`.
 * Run `npm install` to install all dependencies.
-* Run `npm start` to start the server.
+* Run `npm run server` to start the server.
 * Navigate to [`localhost:5000/api/v1`](localhost:3000/api/v1) in your browser to access the application.
 
 ## Tests
