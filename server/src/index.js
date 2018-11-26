@@ -7,8 +7,6 @@ const server = express();
 
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
-// server.use(jsend.middleware);
-// server.use(cors());
 
 routes(server);
 
@@ -21,7 +19,7 @@ server.all('*', (req, res) => {
 });
 
 
-const PORT = 4000;
+const PORT = 3000;
 server.listen(PORT, () => {
   console.log(`Server started on ${PORT}`);
 });

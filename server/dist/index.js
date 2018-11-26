@@ -26,8 +26,6 @@ const server = (0, _express2.default)();
 
 server.use(_bodyParser2.default.json());
 server.use(_bodyParser2.default.urlencoded({ extended: false }));
-// server.use(jsend.middleware);
-// server.use(cors());
 
 (0, _routes2.default)(server);
 
@@ -39,7 +37,7 @@ server.all('*', (req, res) => {
   });
 });
 
-const PORT = 4000;
+const PORT = 3000;
 server.listen(PORT, () => {
   console.log(`Server started on ${PORT}`);
 });
