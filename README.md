@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=APIs)](https://travis-ci.org/yeex/SendIT)
-[![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg?branch=APIs)](https://coveralls.io/github/yeex/SendIT?branch=APIs)[![Maintainability](https://api.codeclimate.com/v1/badges/973fffd123f8ab784461/maintainability)](https://codeclimate.com/github/yeex/SendIT/maintainability)
+[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=APIs)](https://travis-ci.org/yeex/SendIT)[![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg?branch=APIs)](https://coveralls.io/github/yeex/SendIT?branch=APIs)[![Maintainability](https://api.codeclimate.com/v1/badges/973fffd123f8ab784461/maintainability)](https://codeclimate.com/github/yeex/SendIT/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/973fffd123f8ab784461/test_coverage)](https://codeclimate.com/github/yeex/SendIT/test_coverage)
 ###  📮SendIT | UI
 ### SendIT is a courier service that helps users deliver parcels to different destinations.  
