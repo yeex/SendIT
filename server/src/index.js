@@ -10,13 +10,13 @@ server.use(bodyParser.urlencoded({ extended: false }));
 
 routes(server);
 
-// All invalid routes
-server.all('*', (req, res) => {
-  res.status(404).jsend.error({
-    code: 404,
-    message: 'Page not found',
-  });
-});
+// // All invalid routes
+// server.all('*', (req, res) => {
+//   res.status(404).jsend.error({
+//     code: 404,
+//     message: 'Page not found',
+//   });
+// });
 
 
 const PORT = 3000;

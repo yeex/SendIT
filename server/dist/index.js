@@ -29,13 +29,14 @@ server.use(_bodyParser2.default.urlencoded({ extended: false }));
 
 (0, _routes2.default)(server);
 
-// All invalid routes
-server.all('*', (req, res) => {
-  res.status(404).jsend.error({
-    code: 404,
-    message: 'Page not found'
-  });
-});
+// // All invalid routes
+// server.all('*', (req, res) => {
+//   res.status(404).jsend.error({
+//     code: 404,
+//     message: 'Page not found',
+//   });
+// });
+
 
 const PORT = 3000;
 server.listen(PORT, () => {
