@@ -15,11 +15,14 @@
 * [Babel](https://babeljs.io) - Javascript transpiler.
 * [Eslint](https://eslint.org/) - Javascript linter. 
 * [Airbnb](https://www.npmjs.com/package/eslint-config-airbnb) 
-	style [guide](https://github.com/airbnb/javascript) was followed.
+	style [guide](https://github.com/airbnb/javascript).
 
 ## Testing tools
 * [Mocha](https://mochajs.org/) - A Javascript test framework.
 * [Chai](http://chaijs.com) - Assertion library.
+
+## Heroku hosted SendIT
+[Heroku](https://andelasendit.herokuapp.com) 
 
 ##  Required Features:
 - Users can create an account and log in.
@@ -45,13 +48,19 @@
     - `npm run dev-test`
      
 ### Endpoints
-| EndPoint                      | Functionality                                         |
-|:------------------------------|:------------------------------------------------------|
-| GET /parcels                  |    Fetch all parcel delivery orders                   |
-| GET /parcels/parcelId         |    Fetch a specific parcel delivery order             | 
-| GET /users/userId/parcels     |    Fetch all parcel delivery orders by a specific user| 
-| PUT /parcels/parcelId/cancel  |    Cancel the specific parcel delivery order          | 
-| POST /parcels                 |    Create a parcel delivery order                     | 
+|  Methods	| EndPoint                         |        Action                                          |
+|:----------|:---------------------------------|:-------------------------------------------------------|
+|   GET	    | /parcels                  	   | Fetch all parcel delivery orders                       |
+|   GET		| /parcels/parcelId         	   | Fetch a specific parcel delivery order                 | 
+|   GET		| /users/userId/parcels     	   | Fetch all parcel delivery orders by a specific user    | 
+|	PUT		| /parcels/parcelId/cancel  	   | Cancel the specific parcel delivery order              | 
+|   POST	| /parcels                         | Create a parcel delivery order                         | 
+|	POST    | /auth/signup                     | Register a user                                        |
+|   POST    | /auth/login                      | Login a user                                           |
+|	PUT     | /parcels/parcelId/destination    | Change the location of a specific parcel delivery order|
+|	PUT     | /parcels/parcelId/status         | Change the status of a specific parcel delivery order  |
+|	PUT     | /parcels/parcelId/presentLocation| Change the present  location of a specific             | |           |                                  | parcel delivery order                                  |
+
 
 ## Author
 * Ntwari Moise

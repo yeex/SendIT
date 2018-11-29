@@ -26,8 +26,8 @@ describe('GET /parcels', (done) => {
     chai.request(server)
       .get('/api/v1/parcels')
       .end((err, res) => {
-        expect(res.status).to.equal(200);
-        expect(res.body).to.not.be.empty;
+        expect(res.status).to.equal(404);
+        expect(res.body).to.be.empty;
         done(err);
       });
   });

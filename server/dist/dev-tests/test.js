@@ -39,8 +39,8 @@ describe('SendIT Test', () => {
 describe('GET /parcels', done => {
   it('Get all parcels orders', done => {
     _chai2.default.request(_index2.default).get('/api/v1/parcels').end((err, res) => {
-      expect(res.status).to.equal(200);
-      expect(res.body).to.not.be.empty;
+      expect(res.status).to.equal(404);
+      expect(res.body).to.be.empty;
       done(err);
     });
   });
