@@ -46,6 +46,11 @@ const routes = server => {
     const userParcels = _parcels2.default.filter(item => item.user.id === parseInt(req.params.id, 10));
     res.json({ parcels: userParcels });
   });
+  server.post('/api/v1/parcels', (req, res) => {
+    const data = [req.body.parcelId, req.body.id, req.body.parcelname, req.body.status, req.body.location, req.body.destination, req.body.weight, req.body.price];
+    _parcels2.default.push(data);
+    res.send(_parcels2.default);
+  });
   server.put('/api/v1/parcels/:parcelId/cancel', (req, res) => {
     const parcel = _parcels2.default.find(c => c.parcelId === parseInt(req.params.parcelId));
     if (!parcel) return res.status(404).send('The parcel with the given ID was not found.');

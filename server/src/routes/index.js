@@ -19,6 +19,20 @@ const routes = (server) => {
       const userParcels = parcels.filter(item => item.user.id === parseInt(req.params.id, 10));
       res.json({ parcels: userParcels });
   });
+  server.post('/api/v1/parcels', (req, res) => {
+    const data = [
+      req.body.parcelId,
+      req.body.id,
+      req.body.parcelname,
+      req.body.status,
+      req.body.location,
+      req.body.destination,
+      req.body.weight,
+      req.body.price
+    ];
+    parcels.push(data);
+    res.send(parcels);
+  });
   server.put('/api/v1/parcels/:parcelId/cancel', (req, res) => {
       const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
       if (!parcel) return res.status(404).send('The parcel with the given ID was not found.');

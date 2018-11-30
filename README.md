@@ -58,7 +58,7 @@
 |   POST    | /auth/login                      | Login a user                                           |
 |	PUT     | /parcels/parcelId/destination    | Change the location of a specific parcel delivery order|
 |	PUT     | /parcels/parcelId/status         | Change the status of a specific parcel delivery order  |
-|	PUT     | /parcels/parcelId/presentLocation| Change the present  location of a specific             | |           |                                  | parcel delivery order                                  |
+|	PUT     | /parcels/parcelId/presentLocation| Change the present  location of a specific             |  |           |                                  | parcel delivery order                                  |
 
 
 ## Author
