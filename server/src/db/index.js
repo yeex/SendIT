@@ -14,10 +14,10 @@ const pool = new Pool({
 const connect = async () => pool.connect();
 
 // eslint-disable-next-line consistent-return
-const execute = async (sql, data = []) => {
+const execute = async (query, data = []) => {
   const connection = await connect();
   try {
-    return await connection.query(sql, data);
+    return await connection.query(query, data);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.log(error.message);

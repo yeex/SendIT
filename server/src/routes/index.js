@@ -1,34 +1,31 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
 import users from '../models/user';
-import pg from 'pg';
 import parcels from '../models/parcels';
 import execute from '../db/';
-import Joi from 'joi';
-import bcrypt from 'bcrypt';
 import query from '../db/query';
 
 const routes = (server) => {
   server.get('/api/v1/users', (req, res) => {
-  		res.status(200).send(query.users);
+      res.status(200).send(query.users);
   });
   server.get('/api/v1/parcels/:parcelId', (req, res) => {
-  		const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
-  		if (!parcel) return res.status(404).send('The parcel with the given ID was not found.');
-  		parcel.name = req.body.name;
-  		res.send(parcel);
+      const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
+      if (!parcel) return res.status(404).send('The parcel with the given ID was not found.');
+      parcel.name = req.body.name;
+      res.send(parcel);
   });
   server.get('/api/v1/users/:id/parcels', (req, res) => {
-  		const userParcels = parcels.filter(item => item.user.id === parseInt(req.params.id, 10));
-  		res.json({ parcels: userParcels });
+      const userParcels = parcels.filter(item => item.user.id === parseInt(req.params.id, 10));
+      res.json({ parcels: userParcels });
   });
   server.put('/api/v1/parcels/:parcelId/cancel', (req, res) => {
-  		const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
-  		if (!parcel) return res.status(404).send('The parcel with the given ID was not found.');
-  		if (parcel.status === 'cancelled') return res.send('Parcel already cancelled!');
-  		if (parcel.status === 'delivered') return res.send('Parcel cannot be cancelled!');
-  		parcel.status = 'cancelled';
-  		res.send(parcel);
+      const parcel = parcels.find(c => c.parcelId === parseInt(req.params.parcelId));
+      if (!parcel) return res.status(404).send('The parcel with the given ID was not found.');
+      if (parcel.status === 'cancelled') return res.send('Parcel already cancelled!');
+      if (parcel.status === 'delivered') return res.send('Parcel cannot be cancelled!');
+      parcel.status = 'cancelled';
+      res.send(parcel);
   });
   server.post('/api/v1/parcels/:parcelId/destination', verifyToken, async (req, res) => {
     const parcelid = req.params.parcelId;

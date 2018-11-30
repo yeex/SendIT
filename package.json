@@ -2,7 +2,7 @@
   "name": "SendIT",
   "version": "1.0.0",
   "description": "NodeJS REST-APIs",
-  "main": "index.js",
+  "main": "server/dist/index.js",
   "scripts": {
     "dev-test": "mocha server/dist/dev-tests/ || true",
     "start": "node --require babel-core/register --require babel-polyfill ./server/dist/index.js babel ./build/tests --recursive",
@@ -50,6 +50,7 @@
     "jsonwebtoken": "^8.4.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.6",
-    "pg": "^7.6.1"
+    "pg": "^7.6.1",
+    "swagger-ui": "^3.20.1"
   }
 }

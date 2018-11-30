@@ -36,10 +36,10 @@ const connect = (() => {
 
 // eslint-disable-next-line consistent-return
 const execute = (() => {
-  var _ref2 = _asyncToGenerator(function* (sql, data = []) {
+  var _ref2 = _asyncToGenerator(function* (query, data = []) {
     const connection = yield connect();
     try {
-      return yield connection.query(sql, data);
+      return yield connection.query(query, data);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log(error.message);

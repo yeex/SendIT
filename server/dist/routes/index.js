@@ -16,10 +16,6 @@ var _user = require('../models/user');
 
 var _user2 = _interopRequireDefault(_user);
 
-var _pg = require('pg');
-
-var _pg2 = _interopRequireDefault(_pg);
-
 var _parcels = require('../models/parcels');
 
 var _parcels2 = _interopRequireDefault(_parcels);
@@ -27,14 +23,6 @@ var _parcels2 = _interopRequireDefault(_parcels);
 var _db = require('../db/');
 
 var _db2 = _interopRequireDefault(_db);
-
-var _joi = require('joi');
-
-var _joi2 = _interopRequireDefault(_joi);
-
-var _bcrypt = require('bcrypt');
-
-var _bcrypt2 = _interopRequireDefault(_bcrypt);
 
 var _query = require('../db/query');
 
