@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/yeex/SendIT.svg?branch=Develop)](https://travis-ci.org/yeex/SendIT) [![Coverage Status](https://coveralls.io/repos/github/yeex/SendIT/badge.svg?branch=Develop)](https://coveralls.io/github/yeex/SendIT?branch=Develop)
 ###  📮SendIT | UI
 ### SendIT is a courier service that helps users deliver parcels to different destinations.  
 
